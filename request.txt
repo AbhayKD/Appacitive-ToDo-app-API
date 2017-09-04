@@ -1,0 +1,6 @@
+curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X PUT -d '{"username":"intangles@appacitive.com", "password": 123, "firstname": "Abhay"}' http://localhost:3000/signup/json" -X PUT -d '{"username":"intangles@appacitive.com", "password": 123, "firstname": "Abhay"}' http://localhost:3000/signup
+curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X POST -d '{"username":"abhay@appacitive.com", "password":"123"}' http://localhost:3000/login
+curl -i -H "AuthToken: sagasgasg" -H "Content-Type: application/json" -X POST -d '{"id":"168201403809006081", "title":"complete the to do list", "status": "0"}' http://localhost:3000/additem
+curl -i -H "AuthToken: sagasgasg" -H "Content-Type: application/json" -X POST -d '[{"id":"168268470242378410", "status":"0"},{"id":"168268360530919963","status":"1"}]' http://localhost:3000/togglestatus
+curl -i -H "AuthToken: sagasgasg" -H "Content-Type: application/json" -X DELETE http://localhost:3000/deleteitem/168284441672811160
+curl -i -H "AuthToken: sagasgasg" -H "Content-Type: application/json" -X POST -d '{"id":"168284421058855332", "title":"Hello world", "status":"1"}' http://localhost:3000/updateitem
